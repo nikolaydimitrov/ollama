@@ -10,7 +10,7 @@
 // repository].
 //
 // [the API documentation]: https://github.com/nikolaydimitrov/ollama/blob/main/docs/api.md
-// [in the GitHub repository]: https://github.com/nikolaydimitrov/ollamaov/ollama/tree/main/api/examples
+// [in the GitHub repository]: https://github.com/nikolaydimitrov/ollama/tree/main/api/examples
 package api
 
 import (
@@ -25,9 +25,9 @@ import (
 	"net/url"
 	"runtime"
 
-	"github.com/nikolaydimitrov/ollamaov/ollama/envconfig"
-	"github.com/nikolaydimitrov/ollamaov/ollama/format"
-	"github.com/nikolaydimitrov/ollamaov/ollama/version"
+	"github.com/nikolaydimitrov/ollama/envconfig"
+	"github.com/nikolaydimitrov/ollama/format"
+	"github.com/nikolaydimitrov/ollama/version"
 )
 
 // Client encapsulates client state for interacting with the ollama
@@ -277,7 +277,7 @@ type CreateProgressFunc func(ProgressResponse) error
 // Create creates a model from a [Modelfile]. fn is a progress function that
 // behaves similarly to other methods (see [Client.Pull]).
 //
-// [Modelfile]: https://github.com/nikolaydimitrov/ollamaov/ollama/blob/main/docs/modelfile.md
+// [Modelfile]: https://github.com/nikolaydimitrov/ollama/blob/main/docs/modelfile.md
 func (c *Client) Create(ctx context.Context, req *CreateRequest, fn CreateProgressFunc) error {
 	return c.stream(ctx, http.MethodPost, "/api/create", req, func(bts []byte) error {
 		var resp ProgressResponse

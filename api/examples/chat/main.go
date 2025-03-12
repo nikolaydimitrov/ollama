@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ollama/ollama/api"
+	"github.com/nikolaydimitrov/ollama/api"
 )
 
 func main() {
@@ -35,8 +35,26 @@ func main() {
 
 	ctx := context.Background()
 	req := &api.ChatRequest{
-		Model:    "llama3.2",
+		Model:    "llama3.1",
 		Messages: messages,
+		Tools: api.Tools{
+			api.Tool{
+				Type: "function",
+				Function: api.ToolFunction{
+					Name:        "get_weather",
+					Description: "Get the weather for a location",
+					Parameters: api.ToolParameters{
+						Type: "object",
+						Properties: map[string]api.ToolProperty{
+							"location": api.ToolProperty{
+								Type:        "string",
+								Description: "The location to get the weather for",
+							},
+						},
+					},
+				},
+			},
+		},
 	}
 
 	respFunc := func(resp api.ChatResponse) error {
