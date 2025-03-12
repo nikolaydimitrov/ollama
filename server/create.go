@@ -18,15 +18,15 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/ollama/ollama/api"
-	"github.com/ollama/ollama/convert"
-	"github.com/ollama/ollama/envconfig"
-	"github.com/ollama/ollama/format"
-	"github.com/ollama/ollama/fs/ggml"
-	"github.com/ollama/ollama/llama"
-	"github.com/ollama/ollama/template"
-	"github.com/ollama/ollama/types/errtypes"
-	"github.com/ollama/ollama/types/model"
+	"github.com/nikolaydimitrov/ollama/api"
+	"github.com/nikolaydimitrov/ollamaov/ollama/convert"
+	"github.com/nikolaydimitrov/ollamaov/ollama/envconfig"
+	"github.com/nikolaydimitrov/ollamaov/ollama/format"
+	"github.com/nikolaydimitrov/ollamaov/ollama/fs/ggml"
+	"github.com/nikolaydimitrov/ollamaov/ollama/llama"
+	"github.com/nikolaydimitrov/ollamaov/ollama/template"
+	"github.com/nikolaydimitrov/ollamaov/ollama/types/errtypes"
+	"github.com/nikolaydimitrov/ollamaov/ollama/types/model"
 )
 
 var (

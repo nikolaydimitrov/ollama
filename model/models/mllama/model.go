@@ -8,11 +8,11 @@ import (
 	"image"
 	"slices"
 
-	"github.com/ollama/ollama/kvcache"
-	"github.com/ollama/ollama/ml"
-	"github.com/ollama/ollama/ml/nn"
-	"github.com/ollama/ollama/model"
-	"github.com/ollama/ollama/model/input"
+	"github.com/nikolaydimitrov/ollama/ml"
+	"github.com/nikolaydimitrov/ollama/model"
+	kvcache "github.com/nikolaydimitrov/ollamakvcache"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamaml/nn"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamamodel/input"
 )
 
 type Model struct {

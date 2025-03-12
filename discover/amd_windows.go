@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ollama/ollama/envconfig"
-	"github.com/ollama/ollama/format"
+	"github.com/nikolaydimitrov/ollama/envconfig"
+	"github.com/nikolaydimitrov/ollamaov/ollama/format"
 )
 
 const (

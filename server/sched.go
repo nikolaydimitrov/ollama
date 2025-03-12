@@ -14,12 +14,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ollama/ollama/api"
-	"github.com/ollama/ollama/discover"
-	"github.com/ollama/ollama/envconfig"
-	"github.com/ollama/ollama/format"
-	"github.com/ollama/ollama/fs/ggml"
-	"github.com/ollama/ollama/llm"
+	"github.com/nikolaydimitrov/ollama/api"
+	"github.com/nikolaydimitrov/ollamaov/ollama/discover"
+	"github.com/nikolaydimitrov/ollamaov/ollama/envconfig"
+	"github.com/nikolaydimitrov/ollamaov/ollama/format"
+	"github.com/nikolaydimitrov/ollamaov/ollama/fs/ggml"
+	"github.com/nikolaydimitrov/ollamaov/ollama/llm"
 )
 
 type LlmRequest struct {
@@ -132,7 +132,7 @@ func (s *Scheduler) processPending(ctx context.Context) {
 			}
 			numParallel := int(envconfig.NumParallel())
 			// TODO (jmorganca): mllama doesn't support parallel yet
-			// see https://github.com/ollama/ollama/issues/4165
+			// see https://github.com/nikolaydimitrov/ollamaov/ollama/issues/4165
 			if checkMllamaModelFamily(pending.model) && numParallel != 1 {
 				numParallel = 1
 				slog.Warn("mllama doesn't support parallel requests yet")

@@ -5,8 +5,8 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ollama/ollama/ml"
-	"github.com/ollama/ollama/model/input"
+	"github.com/nikolaydimitrov/ollama/ml"
+	"github.com/nikolaydimitrov/ollamaov/ollama/model/input"
 )
 
 type testCase struct {

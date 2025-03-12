@@ -15,11 +15,11 @@ import (
 	_ "golang.org/x/image/tiff"
 	_ "golang.org/x/image/webp"
 
-	fs "github.com/ollama/ollama/fs/ggml"
-	"github.com/ollama/ollama/kvcache"
-	"github.com/ollama/ollama/ml"
-	_ "github.com/ollama/ollama/ml/backend"
-	"github.com/ollama/ollama/model/input"
+	"github.com/nikolaydimitrov/ollama/kvcache"
+	"github.com/nikolaydimitrov/ollama/ml"
+	fs "github.com/nikolaydimitrov/ollamafs/ggml"
+	_ "github.com/nikolaydimitrov/ollamaov/ollamaov/ollamaml/backend"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamamodel/input"
 )
 
 // Model implements a specific model architecture, defining the forward pass and any model-specific configuration

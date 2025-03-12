@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ollama/ollama/auth"
-	"github.com/ollama/ollama/version"
+	"github.com/nikolaydimitrov/ollama/auth"
+	"github.com/nikolaydimitrov/ollamaov/ollama/version"
 )
 
 var (

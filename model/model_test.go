@@ -7,11 +7,11 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	fs "github.com/ollama/ollama/fs/ggml"
-	"github.com/ollama/ollama/ml"
-	"github.com/ollama/ollama/ml/backend/ggml"
-	"github.com/ollama/ollama/ml/nn"
-	"github.com/ollama/ollama/model/input"
+	"github.com/nikolaydimitrov/ollama/ml"
+	fs "github.com/nikolaydimitrov/ollamafs/ggml"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamaml/backend/ggml"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamaml/nn"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamamodel/input"
 )
 
 func TestParseTags(t *testing.T) {

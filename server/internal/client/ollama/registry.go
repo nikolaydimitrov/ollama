@@ -34,11 +34,11 @@ import (
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ollama/ollama/server/internal/cache/blob"
-	"github.com/ollama/ollama/server/internal/chunks"
-	"github.com/ollama/ollama/server/internal/internal/backoff"
-	"github.com/ollama/ollama/server/internal/internal/names"
-	"github.com/ollama/ollama/server/internal/internal/syncs"
+	"github.com/nikolaydimitrov/ollama/server/internal/cache/blob"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/chunks"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/internal/backoff"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/internal/names"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/internal/syncs"
 
 	_ "embed"
 )

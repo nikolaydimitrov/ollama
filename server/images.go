@@ -21,13 +21,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ollama/ollama/api"
-	"github.com/ollama/ollama/envconfig"
-	"github.com/ollama/ollama/fs/ggml"
-	"github.com/ollama/ollama/parser"
-	"github.com/ollama/ollama/template"
-	"github.com/ollama/ollama/types/model"
-	"github.com/ollama/ollama/version"
+	"github.com/nikolaydimitrov/ollama/api"
+	"github.com/nikolaydimitrov/ollamaov/ollama/envconfig"
+	"github.com/nikolaydimitrov/ollamaov/ollama/fs/ggml"
+	"github.com/nikolaydimitrov/ollamaov/ollama/parser"
+	"github.com/nikolaydimitrov/ollamaov/ollama/template"
+	"github.com/nikolaydimitrov/ollamaov/ollama/types/model"
+	"github.com/nikolaydimitrov/ollamaov/ollama/version"
 )
 
 var (

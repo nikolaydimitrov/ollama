@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ollama/ollama/server/internal/cache/blob"
-	"github.com/ollama/ollama/server/internal/chunks"
-	"github.com/ollama/ollama/server/internal/testutil"
+	"github.com/nikolaydimitrov/ollama/server/internal/cache/blob"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/chunks"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/testutil"
 )
 
 func TestManifestMarshalJSON(t *testing.T) {

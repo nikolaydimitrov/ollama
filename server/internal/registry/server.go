@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ollama/ollama/server/internal/cache/blob"
-	"github.com/ollama/ollama/server/internal/client/ollama"
+	"github.com/nikolaydimitrov/ollama/server/internal/cache/blob"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/client/ollama"
 )
 
 // Local is an http.Handler for handling local Ollama API requests for

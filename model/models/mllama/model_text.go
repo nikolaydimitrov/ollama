@@ -4,9 +4,9 @@ import (
 	"math"
 	"slices"
 
-	"github.com/ollama/ollama/kvcache"
-	"github.com/ollama/ollama/ml"
-	"github.com/ollama/ollama/ml/nn"
+	"github.com/nikolaydimitrov/ollama/ml"
+	kvcache "github.com/nikolaydimitrov/ollamakvcache"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamaml/nn"
 )
 
 type TextSelfAttention struct {

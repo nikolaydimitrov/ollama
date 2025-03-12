@@ -10,8 +10,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/ollama/ollama/api"
-	"github.com/ollama/ollama/template"
+	"github.com/nikolaydimitrov/ollama/api"
+	"github.com/nikolaydimitrov/ollamaov/ollama/template"
 )
 
 func readFile(t *testing.T, base, name string) *bytes.Buffer {

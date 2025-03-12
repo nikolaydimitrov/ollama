@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ollama/ollama/envconfig"
+	"github.com/nikolaydimitrov/ollama/envconfig"
 )
 
 // StatusError is an error with an HTTP status code and message.
@@ -165,18 +165,22 @@ type Tool struct {
 	Function ToolFunction `json:"function"`
 }
 
+type ToolProperty struct {
+	Type        string   `json:"type"`
+	Description string   `json:"description"`
+	Enum        []string `json:"enum,omitempty"`
+}
+
+type ToolParameters struct {
+	Type       string                  `json:"type"`
+	Required   []string                `json:"required"`
+	Properties map[string]ToolProperty `json:"properties"`
+}
+
 type ToolFunction struct {
-	Name        string `json:"name"`
-	Description string `json:"description"`
-	Parameters  struct {
-		Type       string   `json:"type"`
-		Required   []string `json:"required"`
-		Properties map[string]struct {
-			Type        string   `json:"type"`
-			Description string   `json:"description"`
-			Enum        []string `json:"enum,omitempty"`
-		} `json:"properties"`
-	} `json:"parameters"`
+	Name        string         `json:"name"`
+	Description string         `json:"description"`
+	Parameters  ToolParameters `json:"parameters"`
 }
 
 func (t *ToolFunction) String() string {

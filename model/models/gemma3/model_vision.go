@@ -3,8 +3,8 @@ package gemma3
 import (
 	"math"
 
-	"github.com/ollama/ollama/ml"
-	"github.com/ollama/ollama/ml/nn"
+	"github.com/nikolaydimitrov/ollama/ml"
+	"github.com/nikolaydimitrov/ollamaov/ollamaov/ollamaml/nn"
 )
 
 var batchSize int = 1

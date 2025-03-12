@@ -19,9 +19,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ollama/ollama/server/internal/cache/blob"
-	"github.com/ollama/ollama/server/internal/client/ollama"
-	"github.com/ollama/ollama/server/internal/cmd/opp/internal/safetensors"
+	"github.com/nikolaydimitrov/ollama/server/internal/cache/blob"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/client/ollama"
+	"github.com/nikolaydimitrov/ollamaov/ollama/server/internal/cmd/opp/internal/safetensors"
 	"golang.org/x/sync/errgroup"
 )
 

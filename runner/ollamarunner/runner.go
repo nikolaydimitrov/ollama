@@ -23,14 +23,14 @@ import (
 
 	"golang.org/x/sync/semaphore"
 
-	"github.com/ollama/ollama/api"
-	"github.com/ollama/ollama/ml"
-	"github.com/ollama/ollama/model"
-	"github.com/ollama/ollama/model/input"
-	"github.com/ollama/ollama/runner/common"
-	"github.com/ollama/ollama/sample"
+	"github.com/nikolaydimitrov/ollama/api"
+	"github.com/nikolaydimitrov/ollamaov/ollama/ml"
+	"github.com/nikolaydimitrov/ollamaov/ollama/model"
+	"github.com/nikolaydimitrov/ollamaov/ollama/model/input"
+	"github.com/nikolaydimitrov/ollamaov/ollama/runner/common"
+	"github.com/nikolaydimitrov/ollamaov/ollama/sample"
 
-	_ "github.com/ollama/ollama/model/models"
+	_ "github.com/nikolaydimitrov/ollamaov/ollama/model/models"
 )
 
 type Sequence struct {
